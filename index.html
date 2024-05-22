@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bay Area 2050</title>
+
+	<!-- viewport for responsive -->	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<!-- CSS stylesheets -->	
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/jqueryui.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/w3.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.typekit.net/dkn4gfd.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin=""/>
+    <link rel="stylesheet" type="text/css" href="css/scrollytelling.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hoz4fwx.css">
+
+  </head>
+  <body>
+
+
+
+    <div class="header">
+
+    	<div class="backgroundvid desktop-bg">
+    		<video muted autoplay loop src="img/2050_BACKGROUND.mp4"></video>
+    	</div>
+
+        <div class="backgroundvid mobile-bg">
+            <img src="img/2050_BACKGROUND.gif"></img>
+        </div>
+
+    	<div class="titlevid desktop-title">
+			<img src="img/2050 GIF LARGE.gif">
+		</div>
+
+        <div class="titlevid-mobile mobile-title">
+            <img src="img/2050-GIF-VERT.gif">
+        </div>
+
+
+        <div class="arrow bounce">    
+            <div class="innerarrow fade-in-image">
+                <img src="img/arrow-down.png">
+            </div>
+        </div>
+
+    	
+    </div>
+
+    <div class="container">
+
+    	<br>	
+		<!-- <div class="textbox textbox1">
+
+			<div class="innertext"> -->
+                <br><br>
+				<div class="subhead firstsubhead">
+					<h3>How Will Climate Change Impact the Bay Area?</h3><br>
+                    <h4>May 2024</h4>
+                    <h5><a href="#credits">By ABC7 News Staff</a></h5>
+    			</div>
+                <br>
+                <!-- </div>
+                </div> -->
+
+                <!-- Navbar -->
+  <div class="sticky sw3-center w3-display-bottom w3-hide-small" style="max-width:1500px; text-align:center; display:inline;"></div>
+  <div class="sticky w3-bar w3-center w3-special-dark-blue w3-padding-16 w3-hide-small">
+    <a href="#fog" class="w3-button w3-ripple w3-special-blue">Fog</a>
+    <a href="#flooding" class="w3-button w3-ripple w3-special-blue">Flooding</a>
+    <a href="#fire" class="w3-button w3-ripple w3-special-blue">Fire</a>
+    <a href="#agriculture" class="w3-button w3-ripple w3-special-blue">Agriculture</a>
+    <a href="#erosion" class="w3-button w3-ripple w3-special-blue">Erosion</a>
+  </div>
+
+
+<!-- Navbar on small screens -->
+<div class="sticky w3-center w3-special-dark-blue w3-padding-16 w3-hide-large w3-hide-medium">
+<div class="sticky w3-bar-width-mobile">
+    <a href="#fog" class="w3-bar w3-button w3-ripple w3-special-blue">Fog</a>
+    <a href="#flooding" class="w3-bar w3-button w3-ripple w3-special-blue">Flooding</a>
+    <a href="#fire" class="w3-bar w3-button w3-ripple w3-special-blue">Fire</a>
+    <a href="#agriculture" class="w3-bar w3-button w3-ripple w3-special-blue">Agriculture</a>
+    <a href="#erosion" class="w3-bar w3-button w3-ripple w3-special-blue">Erosion</a>
+</div>
+</div>
+
+                <div class="textbox textbox1">
+
+                    <div class="innertext">
+
+    			<div class="paragraphs">
+
+    				<p>The San Francisco Bay Area is home to more than 7 million people who take advantage of a Mediterranean climate with mild wet winters and sun drenched summers. Only about 2% of the planet has a similar climate. The cool nights grow some of the finest wine grapes in the world, while during the day pleasant temperatures along the coast meet the cold waters of the Pacific Ocean. But the weather here is changing.</p>
+
+                    <p>Climate change is part of our new reality. Here in the Bay Area, we will see dramatic changes that will impact how and where we live in the future. Fog has been on the decline and rising sea levels threaten our coastline. Inland wildfires will be more frequent, hotter and more dangerous. Our crops are jeopardized by fires and drought. How badly will The Bay be impacted by climate change in the coming decades?</p>
+
+    			</div>
+
+			</div>
+			
+		</div> <!-- end text box -->
+
+
+		<div class="contentbox contentbox1">
+
+			<div class="innercontent">
+
+				<div class="subhead">
+					<h3>Watch Bay Area 2050</h3>
+    			</div>
+
+    			<div class="videobox">
+                    <div class="iframecontainer">
+    				    <iframe src="https://abc7news.com/video/embed/?pid=12499947" scrolling="no"></iframe>
+                    </div>
+    			</div>
+
+                <div class="fullscreen">
+                    <a href="https://abc7news.com/video/embed/?pid=12499947" target="_Blank">Click here to watch in full screen</a>
+                </div>
+
+			</div>	
+			
+		</div> <!-- end content box -->
+
+
+		<div class="textbox textbox2">
+
+			<div class="innertext">
+
+    			<div class="paragraphs">
+
+                    <p>Click the buttons on the top of the screen or scroll down to each section to see more information on specific ways climate change will impact the Bay Area.</p>
+    	
+    			</div>
+
+			</div>
+			
+		</div> <!-- end text box -->
+
+        <div class="textbox textbox2" id="fog">
+
+            <div class="segment desktop-header">
+                <img src="img/FOG2.png"></img>
+            </div>
+
+            <div class="segment mobile-header">
+                <img src="img/FOGMOBILE.png"></img>
+            </div>
+
+            <div class="innertext">
+
+                <div class="paragraphs">
+
+                    <p>By 2050, the annual mean temperature in the Bay Area could increase by 4.4 degrees Farenheight under high-emission scenarios. Indications show the rise in temperature will impact weather, including fog.</p>
+
+                    <p>By 2100, the annual mean temperature could increase by 7.2 degrees under high emission scenarios.</p>
+        
+                </div>
+
+            </div>
+            
+        </div> <!-- end text box -->
+
+        <div class="contentbox contentbox3">
+
+			<div class="innercontent">
+
+    			<div class="graphics">
+    				<iframe title="Bay Area Annual Mean Maximum Temperature" aria-label="Interactive line chart" id="datawrapper-chart-cpVgX" src="https://datawrapper.dwcdn.net/cpVgX/2/?transparent=true&dark=true" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="545" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                    </script>
+    			</div>
+
+			</div>	
+			
+		</div> <!-- end content box -->
+
+        <div class="innertext">
+
+            <div class="paragraphs">
+
+                <p>"how many pictures have you seen of the Golden Gate bridge with the fog pouring through the gate and over the bridge?" Dr. Todd Dawson, an integrative biology professor at UC Berkeley, said. "I mean, it's such an iconic thing."</p>
+
+                <p>But besides its beauty and <a href="https://twitter.com/KarlTheFog" target="_Blank">local celebrity status</a>, the fog has a cooling effect -- which is why the summer climate in San Francisco is so mild.</p>
+
+                <p>"It's really our air conditioner for the Bay Area," Dawson said.</p>
+
+                <p>But the fog has been declining since the early 1950's. During foggy season from May to October, the Bay Area lost about three hours of fog a day from 1950 to now.</p>
+    
+            </div>
+
+        </div>
+        
+
+		<div class="contentbox contentbox3">
+
+			<div class="innercontent">
+
+    			<div class="graphics">
+    				<iframe title="Average Hours of Fog Per Day" aria-label="Line chart" id="datawrapper-chart-d5xC0" src="https://datawrapper.dwcdn.net/d5xC0/28/?transparent=true&dark=true" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+    			</div>
+
+			</div>	
+			
+		</div> <!-- end content box -->
+
+
+            <div class="textbox textbox2">
+
+                <div class="innertext paragraphs">
+    
+                    <div class="paragraphs">
+    
+                        <p>The decline is expected to continue and will impact energy use, crops and other areas of life.</p>
+    
+                        <p>"It'll ripple through society in various ways and how rapidy this changes is really going to have some social and ecological consequences," Dawson said.</p>    
+            
+                    </div>
+    
+                </div>
+                
+            </div> <!-- end text box -->
+
+            <div class="contentbox contentbox1">
+
+                <div class="innercontent">
+    
+                    <div class="subhead">
+                        <h3>Watch How Fog Decline Will Impact You</h3>
+                        <h3></h3>
+                    </div>
+    
+                    <div class="videobox">
+                        <div class="iframecontainer">
+                            <iframe src="https://abc7news.com/video/embed/?pid=12499947" scrolling="no"></iframe>
+                        </div>
+                    </div>
+    
+                    <div class="fullscreen">
+                        <a href="https://abc7news.com/video/embed/?pid=12499947" target="_Blank">Click here to watch in full screen</a>
+                    </div>
+    
+                </div>	
+                
+            </div> <!-- end content box -->
+
+            <div class="textbox textbox2">
+
+                <div class="innertext paragraphs">
+    
+                    <div class="paragraphs">
+    
+                        <p>Northern California is not the only place experiencing less fog. It has been declining around the planet, from Chile to the coast of West Africa.</p>
+    
+                        <p>"Fog is not going to go completely away, but having less of it is definitely showing itself," Dawson said.</p>
+    
+                    </div>
+    
+                </div>
+                
+            </div> <!-- end text box -->
+   
+            <div class="textbox textbox2" id="flooding">
+
+                <div class="segment desktop-header">
+                    <img src="img/FLOODING2.png"></img>
+                </div>
+
+                <div class="segment mobile-header">
+                    <img src="img/FLOODMOBILE.png"></img>
+                </div>
+    
+                <div class="innertext">
+    
+                    <div class="paragraphs">
+    
+                        <p>By 2050, water levels in the Bay could rise over a foot if current human caused emissions continue.</p>
+    
+                        <p>More than 300,000 properties in the Bay Area have an 80% chance of flooding in the next 30 years. Nearly 90% of those homeowners may not have flood insurance.</p>    
+            
+                    </div>
+    
+                </div>
+                
+            </div> <!-- end text box -->
+    
+    
+            <div class="contentbox contentbox3">
+    
+                <div class="innercontent">
+    
+                    <div class="graphics">
+                        <iframe title="Bay Area Properties With High Flood Risk" aria-label="Table" id="datawrapper-chart-sSQkb" src="https://datawrapper.dwcdn.net/sSQkb/2/?transparent=true&dark=true" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="546" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                        </script>
+                    </div>
+    
+                </div>	
+                
+            </div> <!-- end content box -->
+    
+    
+                <div class="textbox textbox2">
+    
+                    <div class="innertext">
+        
+                        <div class="paragraphs">
+        
+                            <p>Sea level rise won't just flood low-lying areas. It could potentially unleash an environmental disaster.</p>
+
+                            <p>"What the lay audience may not understand is we went into the bay to create our shoreline and the water will come back into the city where the orginial shoreline once existed," Elaine Forbes, executive director of the Port of San Francisco, said.</p>
+        
+                            <p>Outside of San Francisco, flooding will impact the entire Bay. The map below shows where sea level rise could happen. It does not include low-lying areas that are not hydraulically connected to flooding zones but may still be vulnerable to flooding.</p>
+                
+                        </div>
+        
+                    </div>
+                    
+                </div> <!-- end text box -->
+
+                <div class="contentbox contentbox3">
+        
+                    <div class="innercontent">
+
+                        <div class="subhead">
+                            <h3>What Does One Foot of Flooding Look Like?</h3>
+                            <h3></h3>
+                        </div>
+        
+                        <div class="graphics iframe-container">
+                            <iframe title="Fire Hazard Severity Zone Map" aria-label="Interactive map" id="datawrapper-chart-ueZMp" src="img/calfire_fhsz_map.htmlf" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="550px" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                            </script>
+                        </div>
+        
+                    </div>	
+                    
+                </div> <!-- end content box -->
+
+
+                <div class="textbox textbox2">
+    
+                    <div class="innertext">
+        
+                        <div class="paragraphs">
+
+                            <p>Flooding will impact more than properties and other structures.</p>
+        
+                            <p>"Like most of the San Francisco Bay, a combination of industry and military activities during World War II really transformed our bay edge," Dr. Kristina Hill, a landscaping architecture and environmental planning professor at UC Berkeley, said.</p>
+        
+                            <p>There are contaminants in the mud from that era that have made their way into creeks, sewer pipes, utility trenches and The Bay. Sea level rise will exacerbate this issue.</p>
+
+                            <p>"It is a catastrphe ready to happen, all around the San Francisco Bay shoreline," Richmond resident Sherry Padgett said. "We need to get our act together now." </p>
+                
+                        </div>
+        
+                    </div>
+                    
+                </div> <!-- end text box -->
+
+    
+                <div class="contentbox contentbox1">
+    
+                    <div class="innercontent">
+        
+                        <div class="subhead">
+                            <h3>Watch How Sea Level Rise Will Impact You</h3>
+                            <h3></h3>
+                        </div>
+        
+                        <div class="videobox">
+                            <div class="iframecontainer">
+                                <iframe src="https://abc7news.com/video/embed/?pid=12499947" scrolling="no"></iframe>
+                            </div>
+                        </div>
+        
+                        <div class="fullscreen">
+                            <a href="https://abc7news.com/video/embed/?pid=12499947" target="_Blank">Click here to watch in full screen</a>
+                        </div>
+        
+                    </div>	
+                    
+                </div> <!-- end content box -->
+
+                <div class="textbox textbox2">
+
+                    <div class="innertext">
+        
+                        <div class="paragraphs">
+        
+                            <p>To combat sea level rise, communities are restoring tidal marsh around The Bay. According to the USDA Forest Service, more than 80 percent of the San Francisco Bay's original tidal wetlands have been altered or displaced.</p>
+        
+                            <p>More than 13,000 acres of tidal marsh has been restored since 2000 and 24,700 additional acres of restoration are currently being planned, according to environmental nonprofit Save the Bay.</p>
+                
+                        </div>
+        
+                    </div>
+                    
+                </div> <!-- end text box -->
+       
+    
+                <div class="textbox textbox2" id="fire">
+
+                    <div class="segment desktop-header">
+                        <img src="img/FIRE2.png"></img>
+                    </div>
+
+                    <div class="segment mobile-header">
+                        <img src="img/FIREMOBILE.png"></img>
+                    </div>
+        
+                    <div class="innertext">
+        
+                        <div class="paragraphs">
+        
+                            <p>By 2050, environmental scientists predict the amount of forested land burned in wildfires in Northern California will increase up to 52 percent if emissions don't change.
+                            </p>
+        
+                            <p>15 of the top 20 most destructive wildfires in California history happened within the past decade. And between 2020 and 2023, almost as many acres burned in the state as the entire decade before.</p>
+                
+                        </div>
+        
+                    </div>
+                    
+                </div> <!-- end text box -->
+        
+        
+                <div class="contentbox contentbox3">
+        
+                    <div class="innercontent">
+        
+                        <div class="graphics iframe-container">
+                            <iframe title="Total Acres Burned Statewide From Wildfires" aria-label="Bar Chart" id="datawrapper-chart-fpoAu" src="https://datawrapper.dwcdn.net/fpoAu/3/?transparent=true&dark=true" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="265" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                            </script>
+                        </div>
+        
+                    </div>	
+                    
+                </div> <!-- end content box -->
+        
+        
+                    <div class="textbox textbox2">
+        
+                        <div class="innertext">
+            
+                            <div class="paragraphs">
+            
+                                <p>"Climate change makes our difficult situation worse," Dr. Scott Stephens, a wildfire science professor at UC Berkeley, said. "Thinking about where people will be living in 2050, it's not going to be the same as it is today."</p>
+            
+                                <p>The State Fire Marshal is required to maintain and update Fire Hazard Severity Zones, which are based on a model that assigns a hazard score for factors that impact fire likihood and behavior over 30 to 50 years without taking mitigation measures into account. The map below shows severity zones within State Responsibility Areas. It does not include Local or Federal Responsibility Areas. Data is accurate as of April 1, 2024. Click <a href="https://osfm.fire.ca.gov/what-we-do/community-wildfire-preparedness-and-mitigation/fire-hazard-severity-zones" target="_blank">here</a> to learn more about the creation of the zones.</p>
+            
+                    
+                            </div>
+            
+                        </div>
+                        
+                    </div> <!-- end text box -->
+
+
+                <div class="contentbox contentbox3">
+        
+                    <div class="innercontent">
+
+                        <div class="subhead">
+                            <h3>Do you live in a State Fire Hazard Severity Zone?</h3>
+                            <h3></h3>
+                        </div>
+        
+                        <div class="graphics iframe-container">
+                            <iframe title="Fire Hazard Severity Zone Map" aria-label="Interactive map" id="datawrapper-chart-ueZMp" src="maps/calfire_fhsz_map.html" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="550px" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                            </script>
+                        </div>
+        
+                    </div>	
+                    
+                </div> <!-- end content box -->
+
+                <div class="textbox textbox2">
+        
+                    <div class="innertext">
+        
+                        <div class="paragraphs">
+        
+                            <p>Casey Taylor is a Paradise resident who lost her home in the 2017 Camp Fire.</p>  
+
+                            <p>"The town of Paradise completely burned to the ground in just a matter of hours," Taylor said. "It was the most deadly and expensive fire in the United States before Lahaina."</p>
+
+                            <p>During the Camp Fire, there were 85 deaths. About 18,000 structures burned to the ground and 50,000 people were displaced.</p>
+
+                            <p>"I'm afraid if we don't start to change our relationship with where we live and also the landscapes around us, there's no way we're going to get out of this hole," Stephens said. "But the good news is, it's a possibility."</p>  
+                
+                        </div>
+        
+                    </div>
+                    
+                </div> <!-- end text box -->
+        
+                    <div class="contentbox contentbox1">
+        
+                        <div class="innercontent">
+            
+                            <div class="subhead">
+                                <h3>Watch How Wildfires Will Impact You</h3>
+                                <h3></h3>
+                            </div>
+            
+                            <div class="videobox">
+                                <div class="iframecontainer">
+                                    <iframe src="https://abc7news.com/video/embed/?pid=12499947" scrolling="no"></iframe>
+                                </div>
+                            </div>
+            
+                            <div class="fullscreen">
+                                <a href="https://abc7news.com/video/embed/?pid=12499947" target="_Blank">Click here to watch in full screen</a>
+                            </div>
+            
+                        </div>	
+                        
+                    </div> <!-- end content box -->
+
+                    <div class="textbox textbox2">
+
+                        <div class="innertext">
+            
+                            <div class="paragraphs">
+
+                                <p>Taylor now has the first designated Wildfire Prepared Home in the country.</p>
+            
+                                <p>Every new home in Paradise meets the Wildfire Prepared Designation, which enforces several mitigation efforts including ember resistent vents, a five-foot defensible space around the home and metal gutters. Click <a href="https://abc7news.com/feature/how-to-mitigate-wildfire-risk-fire-strategies-reduce-loss-what-is-my-for/14041793/" target=_Blank">here</a> to learn more about how to mitigate wildfire risk.</p>
+    
+                                <p>"What happened on November 8th will never ever happen in Paradise ever again," Taylor said.</p> 
+                              
+                            </div>
+            
+                        </div>
+                        
+                    </div> <!-- end text box -->
+
+
+           <div class="textbox textbox2" id="agriculture">
+
+            <div class="segment desktop-header">
+                <img src="img/AGRICULTURE2.png"></img>
+            </div>
+
+            <div class="segment mobile-header">
+                <img src="img/AGMOBILE.png"></img>
+            </div>
+
+            <div class="innertext">
+
+                <div class="paragraphs">
+
+                    <p>By 2050, Napa County will experience more extreme heat days -- meaning days above 90 degrees -- going from an average of 29 extreme heat days per year to an average of 45 days. Sonoma County will go from an average of 14 extreme heat days per year to 25 days.</p>
+                        
+                    <p>Both areas contribute a large percentage to the country's wine production, about 80% of which comes from California. Experts say warming temperatures in the region are forcing the wine growing season to start a month earlier than it did in the 1950s.</p>
+        
+                </div>
+
+            </div>
+            
+        </div> <!-- end text box -->
+
+
+		<div class="contentbox contentbox3">
+
+			<div class="innercontent">
+
+    			<div class="graphics iframe1">
+
+                     <iframe title="Heat days" aria-label="Interactive chart" id="datawrapper-chart-ueZMp" src="https://abcotvdata.github.io/bay-area-2050/heat-table-small/index.html" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="550px" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                     </script>
+
+    			</div>
+
+			</div>	
+			
+		</div> <!-- end content box -->
+
+
+            <div class="textbox textbox2">
+
+                <div class="innertext">
+    
+                    <div class="paragraphs">
+    
+                        <p>More than a third of the country's vegetables and nearly three quarters of the country's fruits and nuts are grown in California. But fluctuations between dry and wet years and rising temperatures have made predicting the future of some crops challenging, according to the U.S. Department of Agriculture.</p>
+
+                        <p>"Napa and other regions have had much lower yields in certain varities and [WHAT WORD IS SHE SAYING HERE] than what would be normal in the last several years," Dr. Elisabeth Forrestel, a viticulture & enology assistant professor at UC Davis, said.</p>
+    
+                        <p>From 2010 through mid-2024, Napa county was in drought about 54% of the time, which is 402 non-consecutive weeks of drought.
+                        </p>
+            
+                    </div>
+    
+                </div>
+                
+            </div> <!-- end text box -->
+
+            <div class="contentbox contentbox3">
+
+                <div class="innercontent">
+    
+                    <div class="graphics">
+    
+                      <iframe title="Percent of Napa County Experiencing Drought" aria-label="Multiple Lines" id="datawrapper-chart-laq10" src="https://datawrapper.dwcdn.net/laq10/5/?transparent=true&dark=true" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="320" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                        </script>     
+    
+                    </div>
+    
+                </div>	
+
+            <div class="textbox textbox2">
+
+                <div class="innertext">
+    
+                    <div class="paragraphs">
+    
+                        <p></p>
+    
+                        <p>Grapes need to be in a specific temperature range, Forrestel said. If there's extreme heat events during ripening, that will impact the style of wine and could create issues around development.</p>
+
+                        <p>"Aa a grape grower you have to be prepared to pivot at any time," Elizabeth Vianna, winemaker and general manager for Chimney Rock Estate, said. "You have to be ready for a cool rainy season or you have to be ready for a very warm season."</p>
+            
+                    </div>
+    
+                </div>
+                
+            </div> <!-- end text box -->
+
+            <div class="contentbox contentbox1">
+
+                <div class="innercontent">
+    
+                    <div class="subhead">
+                        <h3>Watch How Agriculture Shifts Will Impact You</h3>
+                        <h3></h3>
+                    </div>
+    
+                    <div class="videobox">
+                        <div class="iframecontainer">
+                            <iframe src="https://abc7news.com/video/embed/?pid=12499947" scrolling="no"></iframe>
+                        </div>
+                    </div>
+    
+                    <div class="fullscreen">
+                        <a href="https://abc7news.com/video/embed/?pid=12499947" target="_Blank">Click here to watch in full screen</a>
+                    </div>
+    
+                </div>	
+                
+            </div> <!-- end content box -->
+
+            <div class="textbox textbox2">
+
+                <div class="innertext">
+    
+                    <div class="paragraphs">
+
+                        <p>To combat the impacts of rising temperatures and drought, some winemakers are growing smaller vines, which can withstand climate change better than a larger vine.</p>
+                            
+                        <p>"There's still a lot of room for moving it into other sub appalachians or cooler regions in Napa," Forrestel said. "There are options for making decisions around when they're harvested or when you farm them." </p>
+                
+                    </div>
+    
+                </div>
+                
+            </div> <!-- end text box -->
+
+
+
+            <div class="textbox textbox2" id="erosion">
+
+                <div class="segment desktop-header">
+                    <img src="img/EROSION2.png"></img>
+                </div>
+
+                <div class="segment mobile-header">
+                    <img src="img/ERODEMOBILE.png"></img>
+                </div>
+    
+                <div class="innertext">
+    
+                    <div class="paragraphs">
+    
+                        <p>By 2050, statewide damages could reach almost $17.9 billion from destroyed residential and commercial buildings due to sea level rise and coastal erosion, according to California's Fourth Climate Change Assessment Statewide Summary Report.</p>
+    
+                        <p>"The whole coastline is pretty much eroding," Dr. Gary Griggs, an earth sciences professor at UC Santa Cruz, said. "There's absolutely nothing we can do over the long run to hold back the Pacific Ocean."</p>
+    
+                        <p>San Francisco sea levels increased by about eight inches over the last century. By 2050, it will increase by about a foot more.</p>
+    
+            
+                    </div>
+    
+                </div>
+                
+            </div> <!-- end text box -->
+    
+    
+            <div class="contentbox contentbox3">
+    
+                <div class="innercontent">
+    
+                    <div class="graphics">
+                        <iframe title="San Francisco Yearly Sea Level Change" aria-label="Interactive line chart" id="datawrapper-chart-ueZMp" src="https://datawrapper.dwcdn.net/ueZMp/4/?transparent=true&dark=true" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="433" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                        </script>
+                    </div>
+    
+                </div>	
+                
+            </div> <!-- end content box -->
+    
+    
+                <div class="textbox textbox2">
+    
+                    <div class="innertext">
+        
+                        <div class="paragraphs">
+        
+                
+                            <p>"The higher the sea level gets, the more erosion and the faster the erosion will occur," Griggs said.</p>
+
+                            <p>And it's accelerating. Short term extreme events, such as hurricanes and tsunamis, are increasing at the same time the ocean is warming. That means more energy and stronger storm events. This contributes to further erosion along the coastline.</p>
+
+                            <p>"Every coastal city and county in the state is now beginning to think about, now what are our options?" Griggs added. "And there aren't very many."</p>
+                
+                        </div>
+        
+                    </div>
+                    
+                </div> <!-- end text box -->
+    
+                <div class="contentbox contentbox1">
+    
+                    <div class="innercontent">
+        
+                        <div class="subhead">
+                            <h3>Watch How Expedited Coastal Erosion Will Impact You</h3>
+                            <h3></h3>
+                        </div>
+        
+                        <div class="videobox">
+                            <div class="iframecontainer">
+                                <iframe src="https://abc7news.com/video/embed/?pid=12499947" scrolling="no"></iframe>
+                            </div>
+                        </div>
+        
+                        <div class="fullscreen">
+                            <a href="https://abc7news.com/video/embed/?pid=12499947" target="_Blank">Click here to watch in full screen</a>
+                        </div>
+        
+                    </div>	
+                    
+                </div> <!-- end content box -->
+       
+                <br><br><br>    
+
+     <div class="textbox textbox2">
+
+                <div class="subhead">
+                    <h3>So where do we go from here?</h3>
+                </div>
+    
+                    <div class="innertext">
+        
+                        <div class="paragraphs">
+        
+                            <p>Without dramatic action to stop climate change globally, the future looks much different than what we know today. The Earth has already warmed by an average of two degrees Fahrenheit. It's expected to rise to 2.7 degrees by the early 2030s.</p> 
+                            
+                            <p>Without intervention we can expect that warming to continue. We can't stop climate change overnight, but we can slow the rate by reducing the human generated emissions that are causing it.</p>
+        
+                            <p>The Industrial Revolution started us on this path more than 150 years ago. Stopping climate change will take new ideas, new technology and generations of action to slow down and reverse it.</p>
+        
+                            <p>What will you do to make the Bay Area a better place to live? The clock is ticking as we speed toward the Bay Area: 2050.</p>
+        
+                
+                        </div>
+        
+                    </div>
+
+                <br><br><br>    
+
+        <div class="footer"> 
+
+             <div class="credits", id="credits">
+                <div class="subhead">
+                    <h3>Credits</h3>
+                </div>
+                        <div class="row">
+                            <div class="column">
+                        <span class="scrolltitle">Narrated By: </span>Ama Daetz                        <br>
+                        <span class="scrolltitle">Producers: </span> Jason Beal, Chris Bollini, Silvio Carrillo, Tim Didion and Ken Miguel
+                          <br>
+                        <span class="scrolltitle">Data Journalist: </span>Lindsey Feingold  <br>
+                        <span class="scrolltitle">Executive Producers: </span>Ken Miguel and Joshua Hubbard                          <br>
+                        <span class="scrolltitle">Photographers: </span>Jason Beal, Chris Bollini, Silvio Carrillo, Tim Didion and Ken Miguel
+                          <br>
+                        <span class="scrolltitle">Aerial Photographers: </span>Tim Didion and Ken Miguel
+                          <br>
+                        <span class="scrolltitle">Editors: </span>Jason Beal, Chris Bollini, Silvio Carrillo, Tim Didion and Ken Miguel
+                          <br>
+                        <span class="scrolltitle">Lead Production Editor: </span>Jericho Saria
+                          <br>
+                          <span class="scrolltitle">Lead Designer: </span>Danny Tulledge
+                          <br>
+                    </div>
+                    <div class="column">
+                        <span class="scrolltitle">Lead Counsel: </span>Greg Macek and Selina MacLaren                        
+                          <br>
+                        <span class="scrolltitle">Digital Producer: </span>Lindsey Feingold                        
+                          <br>
+                        <span class="scrolltitle">Web design and development: </span>Lindsey Feingold                        
+                          <br>
+                        <span class="scrolltitle">Marketing & Brand Strategy Producer: </span>Mollie Wagner                        
+                          <br>
+                        <span class="scrolltitle">Creative Director: </span>Paula Marcheschi                       
+                          <br>
+                        <span class="scrolltitle">Vice President of Marketing: </span>Candace Hirleman Archer                       
+                          <br>  
+                        <span class="scrolltitle">Vice President of News: </span>Tracey Watkowski-Silva
+                          <br>  
+                        <span class="scrolltitle">President and General Manager: </span>Tom Cibrowski
+                          <br> 
+                    </div>
+                    </div>
+                
+             </div>
+
+             <p class="copywrite">&#9400; 2024 KGO-TV </p>
+
+             <br>
+             <br>
+
+
+
+            
+            
+
+         </div> <!-- ends footer -->
+
+
+
+
+
+
+    </div> <!-- ends container -->
+
+
+<!-- JAVASCRIPT -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jqueryui.js"></script>
+	<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+     crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="js/lib/waypoint.js"></script>
+    <script src="js/lib/waypoints.min.js"></script>
+
+	<script src="js/script.js"></script>
+
+  </body>
+</html>
+
+
+
