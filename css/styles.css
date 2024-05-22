@@ -155,9 +155,6 @@ a:hover { color: #BFDB95;
 }
 
 
-
-
-
 .subhead {
    font-family: "proxima-nova", "urw-din";
 /*   font-weight: bold;*/
@@ -601,6 +598,11 @@ a:hover { color: #BFDB95;
    
 }
 
+.mobile-maps {
+   display: none;
+}  
+
+
 
 
 /*______________________________MEDIA QUERIES______________________________*/
@@ -640,6 +642,14 @@ a:hover { color: #BFDB95;
        .titlevid {
          top: 300px;
       }
+
+      .desktop-maps {
+         display: none;
+      }
+
+      .mobile-maps {
+         display: block;
+      }  
 
    }
 
