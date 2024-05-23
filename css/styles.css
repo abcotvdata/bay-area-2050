@@ -612,11 +612,12 @@ a:hover { color: #BFDB95;
       display: none;
    }
 
-   .desktop-title {
-      object-fit: cover;
-      width: 100%;
+   .titlevid {
+      object-fit: none;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
       top: -50px;
-
    }
 
 }
