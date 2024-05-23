@@ -612,6 +612,11 @@ a:hover { color: #BFDB95;
       display: none;
    }
 
+   .desktop-title {
+      object-fit: cover;
+      width: 100%;
+   }
+
 }
 
 
