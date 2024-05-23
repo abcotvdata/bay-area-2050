@@ -615,7 +615,7 @@ a:hover { color: #BFDB95;
 
    .titlevid img {
       object-fit: none;
-      width: 100%;
+      width: 80%;
    }
 
    .titlevid {
