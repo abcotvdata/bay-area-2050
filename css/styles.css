@@ -614,7 +614,7 @@ a:hover { color: #BFDB95;
 
    .desktop-title {
       object-fit: cover;
-      width: 100%;
+      width: 70%;
    }
 
 }
