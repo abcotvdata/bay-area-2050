@@ -321,7 +321,7 @@
 
                             <p>"What the lay audience may not understand is we went into the bay to create our shoreline and the water will come back into the city where the orginial shoreline once existed," Elaine Forbes, executive director of the Port of San Francisco, said.</p>
         
-                            <p>Outside of San Francisco, flooding will impact the entire Bay. The map below shows where sea level rise could happen. It does not include low-lying areas that are not hydraulically connected to flooding zones but may still be vulnerable to flooding.</p>
+                            <p>Outside of San Francisco, flooding will impact the entire Bay. The map below shows where sea level rise could happen, according to the <a href="https://explorer.adaptingtorisingtides.org/learn" target="_Blank">ART Bay Shoreline Flood Explorer</a>. It does not include low-lying areas that are not hydraulically connected to flooding zones but may still be vulnerable to flooding.</p>
                 
                         </div>
         
@@ -334,14 +334,33 @@
                     <div class="innercontent">
 
                         <div class="subhead">
-                            <h3>What Does One Foot of Flooding Look Like?</h3>
-                            <h3></h3>
+                            <h3>What does one foot of flooding look like?</h3>
                         </div>
         
-                        <div class="graphics iframe-container">
-                            <iframe title="Fire Hazard Severity Zone Map" aria-label="Interactive map" id="datawrapper-chart-ueZMp" src="img/calfire_fhsz_map.htmlf" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="550px" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-                            </script>
+                        <div class="segment map_button">
+                            <!-- <button class="w3-button w3-ripple w3-special-blue1 mapbuttonclick">Click here to expand image</button> -->
+                            <div class="subhead">
+                                <h5>Click the image to expand it</h5>
+                            </div>                            
+                            <img src="img/bay area.png" class="flood_img" id="myImg"></img>
                         </div>
+
+                        <!-- Trigger the Modal -->
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+
+                         <!-- The Close Button -->
+                         <span class="close">&times;</span>
+
+                         <!-- Modal Content (The Image) -->
+                         <img class="modal-content" id="img01" src="bay area expanded.jpg">
+
+                        <!-- Modal Caption (Image Text) -->
+                        <!-- <div id="caption"></div>
+                        </div> -->
+
+
+
         
                     </div>	
                     
@@ -484,7 +503,10 @@
                         </div>
                 
                         <!-- <div class="mobile-maps"> -->
-                            <div class="segment">
+                            <div class="segment map_button">
+                                <div class="subhead">
+                                    <h5>Click the image to go to the map</h5>
+                                </div>  
                                 <a href="https://dig.abclocal.go.com/kgo/interactives/calfire_fhsz_map.html" target="_Blank"><img src="img/fire_severity_zone.png"></a>
                             </div>
                         <!-- </div> -->
@@ -868,19 +890,24 @@
              <br>
              <br>
 
-
-
-            
-            
-
          </div> <!-- ends footer -->
 
 
-
-
-
-
     </div> <!-- ends container -->
+
+
+
+ <!-- map expansion -->  
+<!-- 
+ <div class="map_expansion">
+
+    <img src="img/bay area.png" class="flood_img"></img>
+
+    <div class="exitbutton">
+        <img src="img/exit.svg">
+    </div>
+    
+</div>  -->
 
 
 <!-- JAVASCRIPT -->

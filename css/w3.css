@@ -302,6 +302,15 @@ html {
   font-size: 16px;
 }
 
+.w3-special-blue1,.w3-hover-special-blue1:hover,.w3-special-blue1,.w3-hover-special-blue1:hover{
+  color:white!important;
+  background-color: #67A0BA!important;
+  z-index: 1;
+  width: auto;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
 .w3-special-dark-blue {
   background-color: #3D6E93;
   z-index: 1;
