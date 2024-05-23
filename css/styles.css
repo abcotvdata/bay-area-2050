@@ -618,12 +618,12 @@ a:hover { color: #BFDB95;
    }
 
    .titlevid img {
-      object-fit: none;
-      width: 90%;
+      object-fit: cover;
+      width: 100%;
    }
 
    .titlevid {
-      top: -100px;
+      top: -40px;
    }
 
 }
