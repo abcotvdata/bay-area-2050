@@ -602,6 +602,10 @@ a:hover { color: #BFDB95;
    display: none;
 }  
 
+.video-mobile {
+   display: none;
+}  
+
 
 
 
@@ -615,7 +619,7 @@ a:hover { color: #BFDB95;
 
    .titlevid img {
       object-fit: none;
-      width: 80%;
+      width: 90%;
    }
 
    .titlevid {
@@ -667,6 +671,14 @@ a:hover { color: #BFDB95;
 
       .mobile-maps {
          display: block;
+      }  
+
+      .video-mobile {
+         display: block;
+      }  
+
+      .video-desktop {
+         display: none;
       }  
 
    }
