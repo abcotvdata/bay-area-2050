@@ -635,6 +635,7 @@ a:hover { color: #BFDB95;
    position: fixed; /* Stay in place */
    z-index: 1; /* Sit on top */
    padding-top: 100px; /* Location of the box */
+   padding-bottom: 100px;
    left: 0;
    top: 0;
    width: 100%; /* Full width */
@@ -696,8 +697,13 @@ a:hover { color: #BFDB95;
  /* 100% Image Width on Smaller Screens */
  @media only screen and (max-width: 700px){
    .modal-content {
-     width: 100%;
+     width: 200%;
    }
+
+   .close {
+      right: -100%;
+      padding-right: 10px;
+    }
  }
 
 
