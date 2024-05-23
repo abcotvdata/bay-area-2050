@@ -694,11 +694,19 @@ a:hover { color: #BFDB95;
    cursor: pointer;
  }
  
- /* 100% Image Width on Smaller Screens */
- @media only screen and (max-width: 700px){
+
+/*______________________________MEDIA QUERIES______________________________*/
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
    .modal-content {
      width: 200%;
    }
+
+   .modal {
+      padding-bottom: 200px;
+    }
 
    .close {
       right: -100%;
@@ -706,10 +714,6 @@ a:hover { color: #BFDB95;
     }
  }
 
-
-
-
-/*______________________________MEDIA QUERIES______________________________*/
 
 @media only screen and (min-width: 1700px) {
 
