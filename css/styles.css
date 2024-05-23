@@ -619,11 +619,11 @@ a:hover { color: #BFDB95;
 
    .titlevid img {
       object-fit: none;
-      width: 90%;
+      width: 80%;
    }
 
    .titlevid {
-      top: -100px;
+      top: -50px;
    }
 
 }
