@@ -560,8 +560,9 @@ a:hover { color: #BFDB95;
    color-scheme: dark;
 }
 
-
-
+.date {
+   font-weight:400;
+}
 
 .mobile-header {
    display: none;
