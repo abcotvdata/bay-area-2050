@@ -22,19 +22,6 @@ setInterval(function(){
 
 // <----------------------- map expansion ----------------------->
 
-// $(".mapbuttonclick").click(function(){
-
-// 	$(".map_button").fadeIn()
-// 	$('body').css({'overflow':'hidden'})
-
-
-// });
-
-// $(".exitbutton").click(function(){
-// 	$(".map_button").fadeOut()
-// 	$('body').css({'overflow':'scroll'})
-// });
-
 // Get the modal
 var modal = document.getElementById("myModal");
 
